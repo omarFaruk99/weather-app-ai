@@ -179,3 +179,36 @@ export const weatherCodes: Record<number, { label: string; icon: string }> = {
   96: { label: "Thunderstorm with slight hail", icon: "CloudLightning" },
   99: { label: "Thunderstorm with heavy hail", icon: "CloudLightning" },
 };
+
+export async function getCityName(lat: number, lon: number): Promise<string> {
+  try {
+    // Using BigDataCloud's free reverse geocoding API (no CORS issues)
+    const response = await fetch(
+      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`
+    );
+    
+    if (!response.ok) {
+      console.warn("Reverse geocoding failed:", response.status);
+      return "Unknown Location";
+    }
+    
+    const data = await response.json();
+    
+    // Extract city and country from the response
+    const city = data.city || data.locality || data.principalSubdivision;
+    const country = data.countryName;
+    
+    if (city && country) {
+      return `${city}, ${country}`;
+    } else if (city) {
+      return city;
+    } else if (country) {
+      return country;
+    }
+    
+    return "Unknown Location";
+  } catch (error) {
+    console.error("Failed to reverse geocode:", error);
+    return "Unknown Location";
+  }
+}

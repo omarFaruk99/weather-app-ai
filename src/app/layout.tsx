@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -12,14 +11,17 @@ export const metadata: Metadata = {
 
 import { UnitProvider } from "@/components/unit-context";
 
+import { StarsBackground } from "@/components/stars-background";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen bg-background font-sans antialiased relative`} suppressHydrationWarning>
+        <StarsBackground />
         <UnitProvider>
           {children}
         </UnitProvider>

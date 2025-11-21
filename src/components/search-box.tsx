@@ -1,7 +1,7 @@
 "use client";
 
 import { searchCity, type GeocodingResult } from "@/lib/api";
-import { Loader2, MapPin, Search } from "lucide-react";
+import { Loader2, MapPin, MapPinned } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 interface SearchBoxProps {
@@ -50,16 +50,16 @@ export function SearchBox({ onCitySelect }: SearchBoxProps) {
   return (
     <div ref={wrapperRef} className="relative w-full max-w-md z-50">
       <div className="relative group">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
+        <MapPinned className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white z-10 drop-shadow-lg group-focus-within:text-primary transition-colors pointer-events-none" />
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search for a city..."
-          className="w-full h-12 pl-12 pr-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:bg-white/10 transition-all shadow-lg"
+          className="w-full h-12 pl-12 pr-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:bg-white/10 transition-all shadow-lg relative z-0"
         />
         {isLoading && (
-          <Loader2 className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5 animate-spin text-primary" />
+          <Loader2 className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5 animate-spin text-primary z-10" />
         )}
       </div>
 
