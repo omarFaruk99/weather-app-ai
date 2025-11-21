@@ -48,6 +48,8 @@ This repository is a **starter template** for developers who want to quickly spi
 
 The screenshot above shows the Weather App UI after loading, with the animated starry background visible.
 
+🚀 **Live Demo:** https://weather-app-ai-lilac.vercel.app/
+
 ---
 
 ## Getting Started
