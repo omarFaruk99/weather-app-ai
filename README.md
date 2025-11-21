@@ -44,7 +44,9 @@ This repository is a **starter template** for developers who want to quickly spi
 
 ## Demo
 
-Open your browser and navigate to `http://localhost:3000` after starting the dev server to see the app in action.
+![Weather App Screenshot](public/weather-app-one.png)
+
+The screenshot above shows the Weather App UI after loading, with the animated starry background visible.
 
 ---
 
@@ -116,3 +118,4 @@ Special thanks to the open‑source community for the tools and libraries that m
 ---
 
 _Happy coding!_
+V
