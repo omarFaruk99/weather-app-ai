@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather App 🌤️
+
+**A beautiful, modern web application that displays real‑time weather information** built with **Next.js** and **TypeScript**. This project showcases a sleek UI with animated starry backgrounds, responsive design, and easy integration with any weather API.
+
+⚡ **This entire project, including all source code, was generated entirely by Antigravity, an AI‑powered coding assistant.**
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Running the Development Server](#running-the-development-server)
+- [Building for Production](#building-for-production)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+---
+
+## Overview
+
+This repository is a **starter template** for developers who want to quickly spin up a weather‑forecast web app. It includes:
+
+- A clean, component‑based UI built with **React** and **Next.js** App Router.
+- Dynamic background effects (blinking stars) that stay visible behind content.
+- Type‑safe code with **TypeScript**.
+- Ready‑to‑use styling with modern CSS techniques (CSS variables, gradients, glass‑morphism).
+
+---
+
+## Features
+
+- **Current weather** display (temperature, condition, location).
+- **5‑day forecast** with icons and temperature ranges.
+- **Responsive layout** – works on mobile, tablet, and desktop.
+- **Animated starry background** that remains visible through transparent UI cards.
+- **Easy API integration** – replace the placeholder fetch with any weather service (e.g., OpenWeatherMap, WeatherAPI).
+
+---
+
+## Demo
+
+Open your browser and navigate to `http://localhost:3000` after starting the dev server to see the app in action.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js** (v18 or later) – you can download it from [nodejs.org](https://nodejs.org/).
+- **npm**, **yarn**, **pnpm**, or **bun** – any package manager you prefer.
+
+---
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+
+# Install dependencies (choose your package manager)
+npm install   # or yarn install, pnpm install, bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the Development Server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Start the dev server
+npm run dev   # or yarn dev, pnpm dev, bun dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) in your browser. The page will automatically reload as you edit files.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Building for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build   # or yarn build, pnpm build, bun build
+npm start       # or yarn start, pnpm start, bun start
+```
 
-## Deploy on Vercel
+The optimized production build will be placed in the `.next` directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests. Please follow the standard GitHub flow:
+
+1. Fork the repo.
+2. Create a feature branch.
+3. Commit your changes with clear messages.
+4. Open a pull request.
+
+---
+
+## License
+
+This project is licensed under the **MIT License** – see the `LICENSE` file for details.
+
+---
+
+## Acknowledgements
+
+Special thanks to the open‑source community for the tools and libraries that make this project possible.
+
+---
+
+_Happy coding!_
