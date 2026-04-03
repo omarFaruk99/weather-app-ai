@@ -28,7 +28,7 @@ This repository is a **starter template** for developers who want to quickly spi
 - A clean, component‑based UI built with **React** and **Next.js** App Router.
 - Dynamic background effects (blinking stars) that stay visible behind content.
 - Type‑safe code with **TypeScript**.
-- Ready‑to‑use styling with modern CSS techniques (CSS variables, gradients, glass‑morphism).
+- Ready‑to‑use styling with modern CSS techniques (CSS variables, gradients, glass‑morphism). okay
 
 ---
 
